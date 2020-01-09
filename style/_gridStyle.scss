@@ -1,0 +1,28 @@
+/* grid style */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.gridContainer {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  // grid-template-columns: repeat(3, fl);
+  grid-template-rows: repeat(30, fl);
+}
+.quote {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid black;
+  font-size: 30px;
+  text-align: center;
+}
